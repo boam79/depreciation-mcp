@@ -1,0 +1,30 @@
+{
+  "name": "depreciation-mcp",
+  "version": "1.0.0",
+  "description": "법인세법 기준 고정자산 감가상각·내용연수·세무조정 MCP (PRD MCP-DEP-001-v1)",
+  "type": "module",
+  "bin": {
+    "depreciation-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.1.1"
+  },
+  "packageManager": "pnpm@9.15.4"
+}
